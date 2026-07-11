@@ -1,0 +1,23 @@
+North_pole_09-14-25.txt 300
+Sea_ice_side_of_ship_06-17-24.txt 1500
+Huann_05-10-23.txt 360
+Poi_09-18-25.txt 300
+Saguyanig_ship_track_Canada_02-20.txt 240
+MtCook_NZ_02-07-24.txt 480
+
+Notes:
+For Saguyanig_ship_track_Canada_02-20, we're not sure about the spelling or the volume; it looks like "(4)" at the bottom, which could 4 syringes, so 240 mL.
+
+For MtCook_NZ_02-07-24, we can't read the volume on the petri dish, we're guessing 8 syringes, so 480 mL.
+
+
+file, ugbasic, ngperg, t0
+Cascades (UCB UPS UPS)/Misc/North_pole_09-14-25.txt 0.7402130440677426 2.4673768135591416 5.273112101625547
+Cascades (UCB UPS UPS)/Misc/Sea_ice_side_of_ship_06-17-24.txt 3.3338137658582907 2.222542510572194 4.239592134921425
+Cascades (UCB UPS UPS)/Misc/Huann_05-10-23.txt 0.9310718786523662 2.5863107740343505 5.4434163287127735
+Cascades (UCB UPS UPS)/Misc/Poi_09-18-25.txt 0.9149275325714425 3.0497584419048085 5.603846155320451
+Cascades (UCB UPS UPS)/Misc/Saguyanig_ship_track_Canada_02-20.txt 8.476574558177775 35.31906065907407 4.414871740718492
+Cascades (UCB UPS UPS)/Misc/MtCook_NZ_02-07-24.txt 8.861844613478247 18.46217627807968 5.196916325441512
+
+
+

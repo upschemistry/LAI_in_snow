@@ -1,4 +1,20 @@
-Baker_crater_06-25-25_rBC.txt 60
-Baker_crater_07-10-25_rBC.txt 60
-Baker_summit_07-10-25_rBC.txt 525
-Baker_summit_06-25-25_rBC.txt 300
+Baker_crater_06-25-25_rBC_1.txt 60
+Baker_crater_06-25-25_rBc_2.txt 60
+Baker_crater_07-10-25_rBC_1.txt 60
+Baker_crater_07-10-25_rBc_2.txt 60
+Baker_summit_07-10-25_rBC_1.txt 525
+Baker_summit_07-10-25_rBc_2.txt 525
+Baker_summit_06-25-25_rBC_1.txt 300
+Baker_summit_06-25-25_rBc_2.txt 300
+
+Results:
+file, ugbasic, ngperg, t0
+Cascades (UCB UPS UPS)/Baker/Baker_crater_06-25-25_rBC_1.txt 6.773259459415133 112.88765765691889 5.487479963503785
+Cascades (UCB UPS UPS)/Baker/Baker_crater_06-25-25_rBc_2.txt 6.829982830293751 113.83304717156253 5.710346592602304
+Cascades (UCB UPS UPS)/Baker/Baker_crater_07-10-25_rBC_1.txt 7.761144409000769 129.3524068166795 6.329834117114046
+Cascades (UCB UPS UPS)/Baker/Baker_crater_07-10-25_rBc_2.txt 7.636967566301422 127.28279277169035 6.644043739404554
+Cascades (UCB UPS UPS)/Baker/Baker_summit_07-10-25_rBC_1.txt 8.586314563091793 16.354884882079606 5.55921583121485
+Cascades (UCB UPS UPS)/Baker/Baker_summit_07-10-25_rBc_2.txt 8.10346099620082 15.435163802287274 5.763224499603453
+Cascades (UCB UPS UPS)/Baker/Baker_summit_06-25-25_rBC_1.txt 9.306253124716049 31.020843749053494 4.967001374584827
+Cascades (UCB UPS UPS)/Baker/Baker_summit_06-25-25_rBc_2.txt 9.127149716543434 30.42383238847811 5.0815232449927885
+

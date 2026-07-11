@@ -1,0 +1,7 @@
+Summit_surface.txt 120
+
+Note: We think this is for the surface, rather than the subsurface (but both seem to have been filtered with 2 syringe2 / 120 mL)
+
+Results:
+file, ugbasic, ngperg, t0
+Cascades (UCB UPS UPS)/Adams/Summit_surface.txt 10.19209404019488 84.934117001624 6.14693955716139

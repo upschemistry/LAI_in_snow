@@ -1,2 +1,9 @@
 2024/mtadams_summit_surface_2syringes.txt 120
 2024/mtadams_summit_subsurface_2syringes.txt 120
+
+
+Results:
+file, ugbasic, ngperg, t0
+Cascades (UCB UCB UPS)/2024/mtadams_summit_surface_2syringes.txt 3.507618607415445 29.230155061795376 3.830034155710316
+Cascades (UCB UCB UPS)/2024/mtadams_summit_subsurface_2syringes.txt 7.394901151764941 61.62417626470784 5.989020354952905
+

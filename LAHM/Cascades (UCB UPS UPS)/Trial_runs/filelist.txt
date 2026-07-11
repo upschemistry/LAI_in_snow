@@ -1,3 +1,11 @@
 bakercrater_july10_2025_1syringe_Lucy.txt 60
 Baker_crater_07-10-25.txt 60
 2025-07-03-01-2A.txt 140
+
+Results as of 11 July 2026
+
+file, ugbasic, ngperg, t0
+Cascades (UCB UPS UPS)/Trial_runs/bakercrater_july10_2025_1syringe_Lucy.txt 7.317653999139761 121.96089998566269 7.534050938705573
+Cascades (UCB UPS UPS)/Trial_runs/Baker_crater_07-10-25.txt 7.761144409000769 129.3524068166795 6.329834117114046
+Cascades (UCB UPS UPS)/Trial_runs/2025-07-03-01-2A.txt 7.86264634428691 56.16175960204935 4.224417442422215
+
