@@ -1,0 +1,6 @@
+NucStd4.txt
+NucStd5.txt
+NucStd6.txt
+NucStd7.txt
+
+

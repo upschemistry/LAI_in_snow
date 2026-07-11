@@ -1,0 +1,20 @@
+2024/rainier_camp_subsurface_8syringes.txt 480
+2024/rainier_camp_surface_8syringes.txt 480
+2025/July_2025/rainiermuir_july13_2025_1syringe.txt 60
+2025/June_2025/rainier_summit_june25_2025_5.6syringes.txt 336
+2025/July_2025/rainieringrahamflats_july13_2025_1syringe.txt 60
+2025/May_2025/rainier_campmuir_may23_2025_4.8syringes.txt 288
+2025/May_2025/rainier_highcamp_may23_2025_3.75syringes.txt 225
+
+Note: This data couldn't be read properly by our code:
+2025/June_2025/rainier_muir_june25_2025_1syringe.txt 60
+
+Results:
+file, ugbasic, ngperg, t0
+Cascades (UCB UCB UPS)/2024/rainier_camp_subsurface_8syringes.txt 11.976541474222605 24.95112807129709 7.3911149106287395
+Cascades (UCB UCB UPS)/2024/rainier_camp_surface_8syringes.txt 12.531150507461929 26.10656355721235 9.324023467219819
+Cascades (UCB UCB UPS)/2025/July_2025/rainiermuir_july13_2025_1syringe.txt 9.904320942370545 165.07201570617573 18.61652451456669
+Cascades (UCB UCB UPS)/2025/June_2025/rainier_summit_june25_2025_5.6syringes.txt 3.063808735068206 9.118478378179185 5.007323100273204
+Cascades (UCB UCB UPS)/2025/July_2025/rainieringrahamflats_july13_2025_1syringe.txt 11.476137411454154 191.26895685756924 15.89926636
+Cascades (UCB UCB UPS)/2025/May_2025/rainier_campmuir_may23_2025_4.8syringes.txt 1.5507637463305146 5.3845963414253974 3.88203428606
+Cascades (UCB UCB UPS)/2025/May_2025/rainier_highcamp_may23_2025_3.75syringes.txt 0.9990168719464223 4.440074986428543 6.6879746443

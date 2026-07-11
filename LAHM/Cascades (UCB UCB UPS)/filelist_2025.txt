@@ -1,0 +1,12 @@
+2025/May_2025/bakersandycamp_may27_2025_1syringe.txt 420
+2025/May_2025/bakersummit_may27_2025_1syringe.txt 574
+2025/June_2025/bakercrater_june25_2025_1syringe.txt 60
+2025/June_2025/bakersummit_june25_2025_5syringes.txt 300
+2025/July_2025/bakercrater_july10_2025_1syringe.txt 60
+2025/July_2025/bakersandycamp_july10_2025_1syringe.txt 60
+2025/July_2025/bakersummit_july10_2025_8.75syringes.txt 525
+2025/May_2025/rainier_campmuir_may23_2025_4.8syringes.txt 288
+2025/May_2025/rainier_highcamp_may23_2025_3.75syringes.txt 225
+2025/June_2025/rainier_summit_june25_2025_5.6syringes.txt 336
+2025/July_2025/rainieringrahamflats_july13_2025_1syringe.txt 60
+2025/July_2025/rainiermuir_july13_2025_1syringe.txt 60

@@ -1,0 +1,3 @@
+Adams/Summit_surface.txt 120
+
+Note: We think this is for the surface, rather than the subsurface (but both seem to have been filtered with 2 syringe2 / 120 mL)

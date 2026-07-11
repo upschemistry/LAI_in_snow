@@ -1,0 +1,4 @@
+Baker_crater_06-25-25_rBC.txt 60
+Baker_crater_07-10-25_rBC.txt 60
+Baker_summit_07-10-25_rBC.txt 525
+Baker_summit_06-25-25_rBC.txt 300

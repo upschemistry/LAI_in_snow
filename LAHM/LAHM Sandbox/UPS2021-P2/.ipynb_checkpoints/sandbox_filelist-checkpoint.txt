@@ -1,0 +1,7 @@
+blankfilter.txt 255
+DI.txt 255
+CWU2021-R1/run_1.txt 50
+CWU2021-R4/run_1.txt 50
+UPS2020-D5/run_1.txt 100
+UPS2021-P2/run_1.txt 70
+UPS2021-R1/run_1.txt 810

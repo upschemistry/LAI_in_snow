@@ -1,0 +1,9 @@
+2024/mtcolumbia_S1surface_10syringes.txt 600
+2024/mtcolumbia_S2_subsurface_10syringes.txt 600
+2024/mtbaker_summit_may23_2024_10syringes.txt 600
+2024/mtadams_summit_surface_2syringes.txt 120
+2024/mtadams_summit_subsurface_2syringes.txt 120
+2024/mtbaker_camp_surface_2syringes.txt 120
+2024/mtbaker_camp_subsurface_2syringes.txt 120
+2024/rainier_camp_surface_8syringes.txt 480
+2024/rainier_camp_subsurface_8syringes.txt 480

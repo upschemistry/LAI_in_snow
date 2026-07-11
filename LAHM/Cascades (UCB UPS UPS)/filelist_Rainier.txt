@@ -1,0 +1,24 @@
+Rainier/Rainier_summit_06-25-25_LAHM_1.txt 336
+Rainier/Rainier_summit_08-25-25_LAHM_1.txt 336
+Rainier/Rainier_summit_08-25-25_LAHM_2.txt 336
+Rainier/Rainier_muir_06-25-25_LAHM_1.txt 60
+Rainier/Rainier_muir_07-13-25_LAHM_1.txt 60
+
+Notes:
+The volume for Rainier_summit_08-25-25_LAHM_1 (and _2) are placeholders, we don't know the values
+
+Results as of July 9, 2026:
+file, ugbasic, ngperg, t0
+Cascades (UCB UPS UPS)/Rainier/Rainier_summit_06-25-25_LAHM_1.txt 3.1811233673265633 9.467629069424296 5.3521144761720745
+Cascades (UCB UPS UPS)/Rainier/Rainier_summit_08-25-25_LAHM_1.txt 9.446715551318018 28.115224855113148 6.3185690383812165
+Cascades (UCB UPS UPS)/Rainier/Rainier_summit_08-25-25_LAHM_2.txt 9.800192258427394 29.167238864367246 6.2708063173490345
+Cascades (UCB UPS UPS)/Rainier/Rainier_muir_06-25-25_LAHM_1.txt 12.796544753005543 213.2757458834257 7.059207306635116
+Cascades (UCB UPS UPS)/Rainier/Rainier_muir_07-13-25_LAHM_1.txt 4.017447457547563 66.95745762579273 5.370599036714846
+
+For comparisons to our processing of Lucy's LAHM data:
+Cascades (UCB UCB UPS)/2025/June_2025/rainier_summit_june25_2025_5.6syringes.txt 3.063808735068206 9.118478378179185 5.007323100273204
+Cascades (UCB UCB UPS)/2025/July_2025/rainiermuir_july13_2025_1syringe.txt 9.904320942370545 165.07201570617573 18.61652451456669
+
+Analysis:
+We're pretty happy with the similarity (UCB UCB UPS) vs (UCB UPS UPS) for June 25, 2025.
+The big discrepancy for Rainier_muir_07-13-25_LAHM_1 is probably due to the fact that the filter seems to have lost a lot of sediment; the petri dish had a lot of loose sand in it.
