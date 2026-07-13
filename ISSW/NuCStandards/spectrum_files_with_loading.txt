@@ -1,6 +1,0 @@
-NuC1.txt
-NuC3.txt
-NuC6.txt
-NuC10.txt
-NuC13.txt
-NuC15.txt
