@@ -1,2 +1,2 @@
-run-1.txt 600
 Millipore blank.txt 100
+LAHM_test_data.txt 100
