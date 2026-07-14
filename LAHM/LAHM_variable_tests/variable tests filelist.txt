@@ -1,7 +1,0 @@
-LAHM_variable_tests/run-1.txt 600
-LAHM_variable_tests/UPS2020_21F2.txt 600
-LAHM_variable_tests/UPS2020_21F1.txt 600
-LAHM_variable_tests/UPS2020_21L2.txt 600
-LAHM_variable_tests/UPS2020_21L1.txt 600
-LAHM_variable_tests/UPS2020_21L3.txt 600
-LAHM_variable_tests/UPS2020_21L4.txt 600
