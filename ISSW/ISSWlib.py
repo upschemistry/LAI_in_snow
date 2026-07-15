@@ -189,6 +189,69 @@ def invert_chi_theory(chilist,R1R2):
         taulist = np.append(taulist,thistau)
     return taulist
 
+def get_f_fp_fpp(chilist,R1R2):
+    # This is the same as invert_chi_theory, but includes derivatives
+    from numpy import exp
+    from numpy import sqrt
+    flist = np.empty(0)
+    fplist = np.empty(0)
+    fpplist = np.empty(0)
+    if np.size(chilist) == 1:
+        chilist = [chilist]
+    for chi in chilist:
+        top = (1-R1R2)*np.exp(chi)+np.sqrt((1-R1R2)**2*np.exp(2*chi)+4*R1R2)
+        f = 1/2*np.log(top/2)        
+        flist = np.append(flist,f)
+
+        fp =  0.5*(-exp(chi)/2 + ((2*R1R2 - 2)*exp(2*chi)/2 + 2)/(2*sqrt(4*R1R2 + \
+              (1 - R1R2)**2*exp(2*chi))))/((1 - R1R2)*exp(chi)/2 + sqrt(4*R1R2 + (1 - R1R2)**2*exp(2*chi))/2) 
+        fplist = np.append(fplist,fp)
+
+        fpp =  -0.5*((exp(chi) - ((R1R2 - 1)*exp(2*chi) + 2)/sqrt(4*R1R2 + (R1R2 - 1)**2*exp(2*chi)))**2/((R1R2 - 1)*exp(chi) \
+               - sqrt(4*R1R2 + (R1R2 - 1)**2*exp(2*chi))) + (exp(2*chi) - ((R1R2 - 1)*exp(2*chi) \
+               + 2)**2/(4*R1R2 + (R1R2 - 1)**2*exp(2*chi)))/sqrt(4*R1R2 + (R1R2 - 1)**2*exp(2*chi)))/((R1R2 - 1)*exp(chi) \
+               - sqrt(4*R1R2 + (R1R2 - 1)**2*exp(2*chi))) 
+        fpplist = np.append(fpplist,fpp)
+
+    f_arrays = [flist, fplist, fpplist]
+    return f_arrays
+
+def get_P_Pp_Ppp(kappa,tau_range,f,fp,fpp):
+    # Get penalty function values and derivatives
+    P = np.sum( (tau_range-kappa*f)**2 )
+    Pp = -2*kappa*np.sum( (tau_range-kappa*f)*fp)
+    Ppp = -2*kappa*np.sum(-kappa*fp**2 + (tau_range-kappa*f)*fpp)
+    P_arrays = [P, Pp, Ppp]
+    return P_arrays
+
+def get_R1R1_and_kappa(chi_range,tau_range,R1R2_test, niter=6, verbose=False):
+    for i in range(niter):
+    
+        # Reporting
+        if verbose: print('\nFor iteration ', i)
+        
+        # Get f, fp, and fpp values for different values of R1R2
+        f_arrays = get_f_fp_fpp(chi_range,R1R2_test)
+        f_retrieved = f_arrays[-3]
+        fp_retrieved = f_arrays[-2]
+        fpp_retrieved = f_arrays[-1]
+        
+        # Get kappa values
+        kappa_retrieved = np.median(tau_range/f_retrieved)
+        if verbose: print('kappa_retrieved = ', kappa_retrieved)
+        
+        # Get P arrays
+        P_arrays = get_P_Pp_Ppp(kappa_retrieved,tau_range,f_retrieved,fp_retrieved,fpp_retrieved)
+        Pp = P_arrays[-2]
+        Ppp = P_arrays[-1]
+    
+        # Predict corrections in R1R2
+        delta_R1R2_predicted = -Pp/Ppp
+        if verbose: print('Predicted delta_R1R2 = ', delta_R1R2_predicted)
+        R1R2_test -= delta_R1R2_predicted
+        
+    return kappa_retrieved, R1R2_test
+
 def get_chi_theory(tau,R1R2):
     return 2*tau+np.log((1-R1R2*np.exp(-4*tau))/(1-R1R2))
 
