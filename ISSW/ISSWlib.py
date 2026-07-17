@@ -189,6 +189,11 @@ def invert_chi_theory(chilist,R1R2):
         taulist = np.append(taulist,thistau)
     return taulist
 
+def get_B(R1R2):
+    term = np.sqrt(R1R2**2 + 2*R1R2 + 1); #print('term = ', term)
+    B = 0.5*(R1R2**2 - R1R2*term - 2*R1R2 + term + 1)/(R1R2**2 - R1R2*term + 2*R1R2 + term + 1)
+    return B
+
 def get_f_fp_fpp(chilist,R1R2):
     # This is the same as invert_chi_theory, but includes derivatives
     from numpy import exp
@@ -224,7 +229,7 @@ def get_P_Pp_Ppp(kappa,tau_range,f,fp,fpp):
     P_arrays = [P, Pp, Ppp]
     return P_arrays
 
-def get_R1R1_and_kappa(chi_range,tau_range,R1R2_test, niter=6, verbose=False):
+def get_R1R2_and_kappa(chi_range,tau_range,R1R2_test, niter=50, verbose=False):
     for i in range(niter):
     
         # Reporting
@@ -250,7 +255,7 @@ def get_R1R1_and_kappa(chi_range,tau_range,R1R2_test, niter=6, verbose=False):
         if verbose: print('Predicted delta_R1R2 = ', delta_R1R2_predicted)
         R1R2_test -= delta_R1R2_predicted
         
-    return kappa_retrieved, R1R2_test
+    return R1R2_test, kappa_retrieved
 
 def get_chi_theory(tau,R1R2):
     return 2*tau+np.log((1-R1R2*np.exp(-4*tau))/(1-R1R2))
@@ -278,7 +283,7 @@ def get_chi_obs(I, I0, lambda_nm, plotting=True, title='chi', I_1 = 100, I_2 = 2
         plt.xlabel('wavelength (nm)')
         plt.ylabel('chi')
         plt.xlim([350,800])
-        plt.ylim([0,chi[I_1]*1.5])
+        plt.ylim([0,chi[I_1]*3])
         plt.title(title)
         plt.grid(True)
     
@@ -325,3 +330,49 @@ def get_best_R1R2(L_range_raw, LRF, R1R2_range, beta1, beta2, chi_observed, spec
     plt.legend()
        
     return R1R2_1, R1R2_2, R1R2_1_error, R1R2_2_error
+
+def other_diagnostics(L_range,beta1_std,kappa_450,beta2_std,kappa_600,R1R2_450,R1R2_600,chi_range_450,chi_range_600,spectrum_list):
+    tau1_range = L_range*beta1_std/kappa_450
+    tau2_range = L_range*beta2_std/kappa_600
+    chi1_theory = get_chi_theory(tau1_range,R1R2_450)
+    chi2_theory = get_chi_theory(tau2_range,R1R2_600)
+    
+    plt.figure()
+    plt.plot(L_range,chi_range_450,'o',color='blue',label='obs, 450 nm')
+    plt.plot(L_range,chi_range_600,'o',color='red', label='obs, 600 nm')
+    plt.plot(L_range,chi1_theory,color='blue',label='theory, 450 nm')
+    plt.plot(L_range,chi2_theory,color='red',label='theory, 600 nm')
+    plt.legend()
+    plt.grid(True)
+    plt.xlabel('Loading, adjusted for retention (ug/cm^2)')
+    plt.ylabel('chi')
+    
+    # Testing the inverter (theory values)
+    tau1_from_chi_theory = invert_chi_theory(chi1_theory,R1R2=R1R2_450)
+    tau2_from_chi_theory = invert_chi_theory(chi2_theory,R1R2=R1R2_600)
+    tau1_from_chi_obs = invert_chi_theory(chi_range_450,R1R2=R1R2_450)
+    tau2_from_chi_obs = invert_chi_theory(chi_range_600,R1R2=R1R2_600)
+    
+    plt.figure()
+    plt.plot(tau1_range,tau1_from_chi_theory,'+',color='blue',label='450 nm, theory')
+    plt.plot(tau2_range,tau2_from_chi_theory,'+',color='red', label='600 nm, theory')
+    plt.plot(tau1_range,tau1_from_chi_obs,'o',color='blue',label='450 nm, obs')
+    plt.plot(tau2_range,tau2_from_chi_obs,'o',color='red', label='600 nm, obs')
+    plt.grid(True)
+    plt.xlabel('tau (from standard)')
+    plt.ylabel('tau (inverted from theoretical chi-values)')
+    plt.legend()
+    L_1list_theory = tau1_from_chi_theory/beta1_std*kappa_450
+    L_2list_theory = tau2_from_chi_theory/beta2_std*kappa_600
+    L_1list_obs = tau1_from_chi_obs/beta1_std*kappa_450
+    L_2list_obs = tau2_from_chi_obs/beta2_std*kappa_600
+    print('Equivalent loadings from chi, theory values')
+    number_of_loadings = len(L_range)
+    for i in range(number_of_loadings):
+        L1 = L_1list_theory[i]
+        L2 = L_2list_theory[i]
+        deviation = (L1-L2)/L1
+        L1 = L_1list_obs[i]
+        L2 = L_2list_obs[i]
+        deviation = (L1-L2)/L1
+        print('For obs, ',spectrum_list[i],', L1 =', L1,', L2 =', L2, ', %deviation =', deviation)

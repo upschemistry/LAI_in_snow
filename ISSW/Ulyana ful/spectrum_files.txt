@@ -1,0 +1,8 @@
+2 ug.txt
+5 ug.txt
+10 ug.txt
+25 ug.txt
+40 ug.txt
+66 ug.txt
+
+

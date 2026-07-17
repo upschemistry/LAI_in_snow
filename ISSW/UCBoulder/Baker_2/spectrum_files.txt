@@ -1,0 +1,5 @@
+Baker_crater_06-25-2532.txt
+Baker_summit_05-23-2430.txt
+Baker_summit_07-10-2531.txt
+Baker_crater_07-10-2533.txt
+Baker_summit_06-25-2534.txt
