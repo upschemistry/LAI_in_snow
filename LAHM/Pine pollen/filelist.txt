@@ -1,0 +1,9 @@
+Pine pollen 20 mL.txt 100
+Pine pollen 30 mL.txt 100
+Pine pollen dry smear.txt 100
+
+Results:
+file, ugbasic, ngperg, t0
+Pine pollen/Pine pollen 20 mL.txt 1.7185283604076327 17.185283604076325 4.521048922375737
+Pine pollen/Pine pollen 30 mL.txt 3.732354341225262 37.32354341225262 4.8532462851333
+Pine pollen/Pine pollen dry smear.txt 2.4678013245029025 24.678013245029025 4.737572244849159
