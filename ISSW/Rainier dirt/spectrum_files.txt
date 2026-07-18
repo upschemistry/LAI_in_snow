@@ -1,0 +1,9 @@
+Rainier dirt 1.txt
+Rainier dirt 2.txt
+Rainier dirt 3.txt
+
+Loadings and AAE of Rainier dirt/
+Using calibration parameters from Ulyana ful (July 16, 2026).csv
+For  Rainier dirt 1.txt , L1 = 1.1826946203393691 , L2 = 0.9194256430833324 , AAE = 0.3547799799193059
+For  Rainier dirt 2.txt , L1 = 2.72843165545075 , L2 = 2.1114839296403876 , AAE = 0.3705420254153673
+For  Rainier dirt 3.txt , L1 = 1.5447250288601497 , L2 = 1.3119401918066445 , AAE = 0.047278368561821986

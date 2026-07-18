@@ -3,8 +3,6 @@ DI.txt 255
 Dirt_Stir/run_1.txt 40
 Dirt_NoStir/run_1.txt 57
 
-
-
 Results:
 file, ugbasic, ngperg, t0
 Rainier (UPS UPS UPS)/blankfilter.txt 0.7024060654556488 2.7545335900221524 3.7855880224602414
