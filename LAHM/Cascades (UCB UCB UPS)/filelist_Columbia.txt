@@ -1,7 +1,0 @@
-2024/mtcolumbia_S1surface_10syringes.txt 600
-2024/mtcolumbia_S2_subsurface_10syringes.txt 600
-
-Results as of 11 July 2026:
-file, ugbasic, ngperg, t0
-Cascades (UCB UCB UPS)/2024/mtcolumbia_S1surface_10syringes.txt 8.794913266539217 14.658188777565362 3.5393129680850413
-Cascades (UCB UCB UPS)/2024/mtcolumbia_S2_subsurface_10syringes.txt 5.815770029091954 9.69295004848659 3.88653706801074
