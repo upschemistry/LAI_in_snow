@@ -189,9 +189,16 @@ def invert_chi_theory(chilist,R1R2):
         taulist = np.append(taulist,thistau)
     return taulist
 
-def get_B(R1R2):
+def get_f(chilist,R1R2):
+    return invert_chi_theory(chilist,R1R2)
+
+def get_B_awkward(R1R2):
     term = np.sqrt(R1R2**2 + 2*R1R2 + 1); #print('term = ', term)
     B = 0.5*(R1R2**2 - R1R2*term - 2*R1R2 + term + 1)/(R1R2**2 - R1R2*term + 2*R1R2 + term + 1)
+    return B
+    
+def get_B(R1R2):
+    B = 0.5*(1-R1R2)/(1+R1R2)
     return B
 
 def get_f_fp_fpp(chilist,R1R2):
@@ -242,7 +249,8 @@ def get_R1R2_and_kappa(chi_range,tau_range,R1R2_test, niter=50, verbose=False):
         fpp_retrieved = f_arrays[-1]
         
         # Get kappa values
-        kappa_retrieved = np.median(tau_range/f_retrieved)
+        # kappa_retrieved = np.median(tau_range/f_retrieved)
+        kappa_retrieved = (tau_range/f_retrieved)[0]
         if verbose: print('kappa_retrieved = ', kappa_retrieved)
         
         # Get P arrays
@@ -369,10 +377,15 @@ def other_diagnostics(L_range,beta1_std,kappa_450,beta2_std,kappa_600,R1R2_450,R
     print('Equivalent loadings from chi, theory values')
     number_of_loadings = len(L_range)
     for i in range(number_of_loadings):
-        L1 = L_1list_theory[i]
-        L2 = L_2list_theory[i]
-        deviation = (L1-L2)/L1
-        L1 = L_1list_obs[i]
-        L2 = L_2list_obs[i]
-        deviation = (L1-L2)/L1
-        print('For obs, ',spectrum_list[i],', L1 =', L1,', L2 =', L2, ', %deviation =', deviation)
+        L1_theory = L_1list_theory[i]
+        L2_theory = L_2list_theory[i]
+        L1_obs = L_1list_obs[i]
+        L2_obs = L_2list_obs[i]
+        deviation1 = (L1_theory-L1_obs)/L1_obs
+        deviation2 = (L2_theory-L2_obs)/L2_obs
+        print('For obs, ',spectrum_list[i], ' %deviations =', deviation1*100, deviation2*100)
+
+def find_min_idx(x):
+    k = x.argmin()
+    ncol = x.shape[1]
+    return round(k/ncol), k%ncol
