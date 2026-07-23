@@ -1,0 +1,242 @@
+LAHM AND ISSW RECALCULATED RESULTS
+Generated (UTC): 2026-07-22T19:06:24.314414+00:00
+Repository commit: de05c7c6c87d9536860621e0912516bc6a9dfe57
+
+METHODS
+LAHM: current LAHM/LAHM_analysis.ipynb and LAHM_library.py logic; LAHM unit 10; exponential fit A*(1-exp(-t/t0)) over array indices 40:160.
+ISSW: current ISSW_Calibrate_IV.ipynb calibration followed by ISSW_Analyze_IV.ipynb retrieval logic; nucleopore UPS_INKStandards calibration.
+Discovery: active filelist*.txt and spectrum_files.txt first blocks; LAHM Sandbox, checkpoints, filelist graveyard, Baker (old), and ISSW code_graveyard excluded.
+Raw measurement files and original lists were not modified.
+
+ISSW CALIBRATION PARAMETERS
+calibration_folder	ISSW/UPS_INKStandards
+filter_type	nucleopore
+standards_used	B.10mL.txt; A.14mL.txt; C.20mL.txt; C.34mL.txt; C.50mL.txt
+wavelength_1_nm	450
+wavelength_2_nm	600
+betabar_450_std	0.0622319314797
+betabar_600_std	0.0549824449509
+AAE_std	0.430524861106
+p_L_450	6.25586229502 6.23233270294 -2.04196144985e-05
+p_L_600	5.40369812817 7.86488658631 -6.66150850111e-06
+
+LAHM RESULTS
+sample_file	source_filelist	volume_mL	ugbasic_ug	ng_per_g	t0_s	status
+LAHM/Cascades (UCB UPS UPS)/Adams/Summit_surface.txt	LAHM/Cascades (UCB UPS UPS)/Adams/filelist.txt	120	10.1920940402	84.9341170016	6.14693955987	OK
+LAHM/Cascades (UCB UPS UPS)/Baker/Baker_crater_06-25-25_rBC_1.txt	LAHM/Cascades (UCB UPS UPS)/Baker/filelist.txt	60	6.77325945942	112.887657657	5.48747996334	OK
+LAHM/Cascades (UCB UPS UPS)/Baker/Baker_crater_06-25-25_rBc_2.txt	LAHM/Cascades (UCB UPS UPS)/Baker/filelist.txt	60	6.82998283029	113.833047172	5.71034659219	OK
+LAHM/Cascades (UCB UPS UPS)/Baker/Baker_crater_07-10-25_rBC_1.txt	LAHM/Cascades (UCB UPS UPS)/Baker/filelist.txt	60	7.761144409	129.352406817	6.32983411728	OK
+LAHM/Cascades (UCB UPS UPS)/Baker/Baker_crater_07-10-25_rBc_2.txt	LAHM/Cascades (UCB UPS UPS)/Baker/filelist.txt	60	7.6369675663	127.282792772	6.64404373786	OK
+LAHM/Cascades (UCB UPS UPS)/Baker/Baker_summit_06-25-25_rBC_1.txt	LAHM/Cascades (UCB UPS UPS)/Baker/filelist.txt	300	9.30625312472	31.0208437491	4.96700137449	OK
+LAHM/Cascades (UCB UPS UPS)/Baker/Baker_summit_06-25-25_rBc_2.txt	LAHM/Cascades (UCB UPS UPS)/Baker/filelist.txt	300	9.12714971654	30.4238323885	5.08152324132	OK
+LAHM/Cascades (UCB UPS UPS)/Baker/Baker_summit_07-10-25_rBC_1.txt	LAHM/Cascades (UCB UPS UPS)/Baker/filelist.txt	525	8.58631456309	16.3548848821	5.55921583204	OK
+LAHM/Cascades (UCB UPS UPS)/Baker/Baker_summit_07-10-25_rBc_2.txt	LAHM/Cascades (UCB UPS UPS)/Baker/filelist.txt	525	8.1034609962	15.4351638023	5.76322449921	OK
+LAHM/Cascades (UCB UPS UPS)/Misc/Huann_05-10-23.txt	LAHM/Cascades (UCB UPS UPS)/Misc/filelist.txt	360	0.931071878652	2.58631077403	5.44341633105	OK
+LAHM/Cascades (UCB UPS UPS)/Misc/MtCook_NZ_02-07-24.txt	LAHM/Cascades (UCB UPS UPS)/Misc/filelist.txt	480	8.86184461348	18.4621762781	5.19691632862	OK
+LAHM/Cascades (UCB UPS UPS)/Misc/North_pole_09-14-25.txt	LAHM/Cascades (UCB UPS UPS)/Misc/filelist.txt	300	0.740213044068	2.46737681356	5.2731121082	OK
+LAHM/Cascades (UCB UPS UPS)/Misc/Poi_09-18-25.txt	LAHM/Cascades (UCB UPS UPS)/Misc/filelist.txt	300	0.914927532571	3.0497584419	5.60384615616	OK
+LAHM/Cascades (UCB UPS UPS)/Misc/Saguyanig_ship_track_Canada_02-20.txt	LAHM/Cascades (UCB UPS UPS)/Misc/filelist.txt	240	8.47657455818	35.3190606591	4.41487174205	OK
+LAHM/Cascades (UCB UPS UPS)/Misc/Sea_ice_side_of_ship_06-17-24.txt	LAHM/Cascades (UCB UPS UPS)/Misc/filelist.txt	1500	3.33381376586	2.22254251057	4.2395921357	OK
+LAHM/Cascades (UCB UPS UPS)/Rainier/Rainier_muir_06-25-25_LAHM_1.txt	LAHM/Cascades (UCB UPS UPS)/Rainier/filelist.txt	60	12.796544753	213.275745883	7.05920731092	OK
+LAHM/Cascades (UCB UPS UPS)/Rainier/Rainier_muir_07-13-25_LAHM_1.txt	LAHM/Cascades (UCB UPS UPS)/Rainier/filelist.txt	60	4.01744745755	66.9574576258	5.37059903601	OK
+LAHM/Cascades (UCB UPS UPS)/Rainier/Rainier_summit_06-25-25_LAHM_1.txt	LAHM/Cascades (UCB UPS UPS)/Rainier/filelist.txt	336	3.18112336733	9.46762906942	5.35211447359	OK
+LAHM/Cascades (UCB UPS UPS)/Rainier/Rainier_summit_08-25-25_LAHM_1.txt	LAHM/Cascades (UCB UPS UPS)/Rainier/filelist.txt	336	9.44671555132	28.1152248551	6.31856903849	OK
+LAHM/Cascades (UCB UPS UPS)/Rainier/Rainier_summit_08-25-25_LAHM_2.txt	LAHM/Cascades (UCB UPS UPS)/Rainier/filelist.txt	336	9.80019225843	29.1672388644	6.27080631466	OK
+LAHM/Cascades (UCB UPS UPS)/Trial_runs/2025-07-03-01-2A.txt	LAHM/Cascades (UCB UPS UPS)/Trial_runs/filelist.txt; LAHM/Cascades (UCB UPS UPS)/filelist.txt; LAHM/Cascades (UCB UPS UPS)/filelist_Trial_runs.txt	140	7.86264634429	56.161759602	4.22441744364	OK; list path resolved by filename
+LAHM/Cascades (UCB UPS UPS)/Trial_runs/Baker_crater_07-10-25.txt	LAHM/Cascades (UCB UPS UPS)/Trial_runs/filelist.txt; LAHM/Cascades (UCB UPS UPS)/filelist.txt; LAHM/Cascades (UCB UPS UPS)/filelist_Trial_runs.txt	60	7.761144409	129.352406817	6.32983411728	OK; list path resolved by filename
+LAHM/Cascades (UCB UPS UPS)/Trial_runs/bakercrater_july10_2025_1syringe_Lucy.txt	LAHM/Cascades (UCB UPS UPS)/Trial_runs/filelist.txt; LAHM/Cascades (UCB UPS UPS)/filelist.txt; LAHM/Cascades (UCB UPS UPS)/filelist_Trial_runs.txt	60	7.31765399914	121.960899986	7.53405093887	OK; list path resolved by filename
+LAHM/Pine pollen/Pine pollen 20 mL.txt	LAHM/Pine pollen/filelist.txt	100	1.71852836041	17.1852836041	4.52104892115	OK
+LAHM/Pine pollen/Pine pollen 30 mL.txt	LAHM/Pine pollen/filelist.txt	100	3.73235434123	37.3235434123	4.85324628532	OK
+LAHM/Pine pollen/Pine pollen dry smear.txt	LAHM/Pine pollen/filelist.txt	100	2.4678013245	24.678013245	4.7375722488	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-1LA/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	55	6.54501601351	119.000291155	4.40811455978	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-1LB/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	60	6.83314376411	113.885729402	4.53780189533	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-1LC/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	60	7.04951967796	117.491994633	4.75535027992	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-1RA/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	100	5.56543553019	55.6543553019	4.53108579293	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-1RB/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	120	6.91951208257	57.6626006881	4.57458240393	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-2LA/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	320	5.84899434361	18.2781073238	4.06401012499	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-2LB/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	520	13.5131897461	25.9869033579	4.29842609629	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-2R/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	330	8.24609277486	24.9881599238	3.97872238159	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-3LA/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	515	8.13026725321	15.7869267053	4.01888679844	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-3LB/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	515	7.98627835343	15.5073366086	4.04378030035	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-3R/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	510	7.5199719228	14.7450429859	4.22549737644	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-4LA/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	395	8.45629848388	21.4083505921	4.02358678811	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-4LB/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	390	7.97568690753	20.4504792501	4.20090690996	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-4R/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	390	6.63102087059	17.0026176169	4.11757282411	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-5LA/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	205	5.23702729623	25.5464746158	4.24500917098	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-5LB/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	205	4.73248966684	23.085315448	4.23792655362	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-5R/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	400	6.52355852363	16.3088963091	4.22487514963	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-6LA/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	330	6.78457788743	20.5593269316	4.36563823468	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-6LB/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	200	4.42431206783	22.1215603391	4.22274558488	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-6R/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	400	6.52937792534	16.3234448133	4.20674649995	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-06-07-7/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	715	5.79878033699	8.1101822895	4.06662151258	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-1A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	45	12.9922625647	288.716945881	7.31165045237	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-1B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	35	14.3893517526	411.124335789	7.21078075634	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-2A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	320	5.66821559526	17.7131737352	4.69258899185	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-2B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	260	6.02976841415	23.1914169775	4.55472193104	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-3A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	390	6.8148244864	17.4739089395	4.26065342645	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-3B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	330	7.19826686852	21.8129299046	4.61908198534	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-4A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	900	5.02090082886	5.57877869873	4.13898487564	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-4B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	680	3.76925177017	5.54301730907	4.08242314916	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-5A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	775	4.55360589061	5.87562050402	4.05453972787	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-02-5B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	775	4.38123316976	5.65320409001	4.0901555693	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-1A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	115	13.9314497176	121.143041023	6.76622662084	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-1B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	95	13.985973416	147.2207728	6.03529664198	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-2A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	710	5.12158456592	7.21349938862	4.27230352972	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-2B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	650	4.96206340099	7.63394369382	4.18997011371	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-3A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	520	4.36463993033	8.39353832757	3.96629603342	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-3B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	520	4.06067290597	7.80898635763	4.09387933062	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-3C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	460	3.31165610782	7.1992524083	4.10369186418	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-4A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	770	5.36997293272	6.97399082171	4.03419594863	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-4B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	660	4.47436796805	6.77934540613	3.99187996746	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-5A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	770	4.16932871493	5.41471261679	4.01470075825	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-10-04-5B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	740	4.01609388556	5.4271538994	3.96591989076	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-1A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	30	6.01990309801	200.6634366	5.03640355651	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-1B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	50	9.75623341136	195.124668227	5.65585776063	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-1C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	30	8.90731441713	296.910480571	5.60224161232	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-2A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	50	3.77447708307	75.4895416614	4.2239627005	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-2B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	50	3.76229095529	75.2458191058	4.18822783287	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-2C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	55	4.10302267683	74.600412306	4.1770791018	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-3A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	130	6.61215098856	50.862699912	4.15995385573	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-3B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	95	4.99952540515	52.6265832121	4.04845046048	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-4A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	200	7.02048263014	35.1024131507	4.16081141178	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-4B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	200	6.71030510251	33.5515255125	4.19880642719	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-5A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	200	9.46553789156	47.3276894578	4.22634758939	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-5B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	140	6.2784472635	44.8460518822	4.18088665278	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-6A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	325	6.92302083415	21.3016025666	4.15127297373	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-07-6B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	265	6.21482798717	23.4521810837	4.08135780824	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-1A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	175	8.0692431727	46.1099609869	5.1228815602	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-1B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	80	7.30141243622	91.2676554527	5.14261765956	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-1C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	65	6.93355453737	106.670069806	4.81266867006	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-2A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	390	4.62730533309	11.8648854695	4.11166858931	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-2B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	330	5.02322207565	15.2218850777	4.08889076339	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-2C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	330	4.32614580412	13.1095327398	4.13731719774	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-3A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	330	10.3804709301	31.4559725155	3.91642551089	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-3B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	260	8.0234289665	30.8593421788	3.83644143892	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-3C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	205	6.22638956141	30.3726320069	3.90352120952	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-4A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	330	6.32210293572	19.157887684	3.95539877456	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-4B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	395	7.85880534384	19.8957097312	4.14741858372	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-4C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	385	7.85147629583	20.3934449242	4.06411321354	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-5A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	370	7.18352279173	19.4149264641	4.03797752718	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-5B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	385	6.90071357779	17.9239313709	4.03653131531	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-6A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	595	7.89622552486	13.2709672687	4.20968369753	OK
+LAHM/Rainier (UPS UPS UPS)/2025-06-24-14-6B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	530	7.02692804831	13.2583548081	4.22823011604	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-1A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	25	11.399083409	455.963336362	6.58775136065	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-1B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	25	9.72919391964	389.167756786	6.18119175271	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-1C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	30	9.64069471575	321.356490525	6.45424010938	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-2A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	140	8.27614330735	59.1153093382	4.37440946937	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-2B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	150	9.8893937141	65.9292914273	4.50678971319	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-3A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	200	8.3726262835	41.8631314175	4.27428950791	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-3B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	205	7.76425868164	37.8744325934	4.27661235193	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-4A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	720	8.06248340589	11.1978936193	4.27647138424	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-4B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	700	7.3179857261	10.454265323	4.28331745714	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-5A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	710	8.83479831631	12.4433779103	4.14030302287	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-5B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	670	7.72970622011	11.5368749554	4.28933810498	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-01-6/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_1.txt	1480	6.54808531326	4.42438196842	4.38454240078	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-1A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_7.txt	35	9.56411623552	273.260463872	6.1641550675	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-1B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt; LAHM/Rainier (UPS UPS UPS)/filelist_site_7.txt	25	8.70876795986	348.350718394	5.94598713342	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-1C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	40	5.51162953132	137.790738283	4.95015643796	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-2A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	85	4.48446769997	52.7584435291	4.15775704046	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-2B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	95	5.2587718145	55.3554927842	4.42756774097	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-2C/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	115	6.6897220898	58.1714964331	4.40418468233	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-3A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	270	7.55486698062	27.9809888171	4.34868422136	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-3B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	205	6.01497448249	29.341338939	4.14053199826	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-4A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	460	6.88131529179	14.9593810691	4.31668333994	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-4B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	390	5.86551090843	15.0397715601	4.31652934193	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-5A/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	650	7.52504654123	11.5769946788	4.41856526474	OK
+LAHM/Rainier (UPS UPS UPS)/2025-07-03-07-5B/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_all.txt	720	7.20515474124	10.0071593628	4.34387819919	OK
+LAHM/Rainier (UPS UPS UPS)/DI.txt	LAHM/Rainier (UPS UPS UPS)/filelist_blank_and_dirt.txt	255	0.763251675565	2.99314382574	5.22297683238	OK
+LAHM/Rainier (UPS UPS UPS)/Dirt_NoStir/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_blank_and_dirt.txt	57	2.87421856003	50.4248870181	4.86085183184	OK
+LAHM/Rainier (UPS UPS UPS)/Dirt_Stir/run_1.txt	LAHM/Rainier (UPS UPS UPS)/filelist_blank_and_dirt.txt	40	8.5532085452	213.83021363	6.92011499361	OK
+LAHM/Rainier (UPS UPS UPS)/blankfilter.txt	LAHM/Rainier (UPS UPS UPS)/filelist_blank_and_dirt.txt	255	0.702406065456	2.75453359002	3.78558802659	OK
+LAHM/Trial runs/LAHM_test_data.txt	LAHM/Trial runs/filelist.txt	100	12.3400894886	123.400894886	4.96899770563	OK
+LAHM/Trial runs/Millipore blank.txt	LAHM/Trial runs/filelist.txt	100	0.717554492692	7.17554492692	4.38772605351	OK
+LAHM/Ulyana ful/10 ug.txt	LAHM/Ulyana ful/filelist.txt	10	4.86639160801	486.639160801	5.55210499206	OK
+LAHM/Ulyana ful/2 ug.txt	LAHM/Ulyana ful/filelist.txt	10	1.43078910736	143.078910736	6.41279999744	OK
+LAHM/Ulyana ful/25 ug.txt	LAHM/Ulyana ful/filelist.txt	10	12.33713059	1233.713059	5.37322878412	OK
+LAHM/Ulyana ful/40 ug.txt	LAHM/Ulyana ful/filelist.txt	10	21.1809539459	2118.09539459	5.21588518814	OK
+LAHM/Ulyana ful/5 ug.txt	LAHM/Ulyana ful/filelist.txt	10	2.88026523094	288.026523094	5.74348597572	OK
+LAHM/Ulyana ful/66 ug.txt	LAHM/Ulyana ful/filelist.txt	10	33.1813716473	3318.13716473	5.13313338285	OK
+
+ISSW RESULTS
+sample_file	source_spectrum_list	filter_type	L450_equiv	L600_equiv	AAE	status
+ISSW/2026July7/NucFul/NucStd4.txt	ISSW/2026July7/NucFul/spectrum_files.txt	nucleopore	1.21548248639	1.23735582002	0.368527276981	OK
+ISSW/2026July7/NucFul/NucStd5.txt	ISSW/2026July7/NucFul/spectrum_files.txt	nucleopore	1.09987045855	1.12372458389	0.355941550387	OK
+ISSW/2026July7/NucFul/NucStd6.txt	ISSW/2026July7/NucFul/spectrum_files.txt	nucleopore	1.34083468963	1.36274253192	0.374188663617	OK
+ISSW/2026July7/NucFul/NucStd7.txt	ISSW/2026July7/NucFul/spectrum_files.txt	nucleopore	2.26620561459	2.29887616474	0.380770346076	OK
+ISSW/2026July7/NucInc/NucA14mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	1.01656105769	0.946170148428	0.67996092587	OK
+ISSW/2026July7/NucInc/NucA17mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	0.517684632159	0.288834042676	2.4588541111	OK
+ISSW/2026July7/NucInc/NucA24mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	2.81021450912	2.76611512018	0.485505576288	OK
+ISSW/2026July7/NucInc/NucA28mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	2.06379963371	1.95333066029	0.621752695638	OK
+ISSW/2026July7/NucInc/NucB10mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	0.763020621607	0.681446600169	0.823553057878	OK
+ISSW/2026July7/NucInc/NucB5mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	0.740028997829	0.653473954892	0.862900410786	OK
+ISSW/2026July7/NucInc/NucC10mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	0.897504318357	0.819475419846	0.746684736723	OK
+ISSW/2026July7/NucInc/NucC20mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	1.33637453031	1.19920464849	0.806988461514	OK
+ISSW/2026July7/NucInc/NucC34mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	3.79168109693	3.80929821229	0.414411608246	OK
+ISSW/2026July7/NucInc/NucC40mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	5.50509394215	5.56026165534	0.395863915857	OK
+ISSW/2026July7/NucInc/NucC50mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	8.5567827757	8.56769452584	0.426094956801	OK
+ISSW/2026July7/NucInc/NucC5mL.txt	ISSW/2026July7/NucInc/spectrum_files.txt	nucleopore	0.633397681998	0.533155073416	1.0294017625	OK
+ISSW/NuCStandards/NuC1.txt	ISSW/NuCStandards/spectrum_files.txt	nucleopore	0.270521795577	0.216073052064	1.21172097029	OK
+ISSW/NuCStandards/NuC10.txt	ISSW/NuCStandards/spectrum_files.txt	nucleopore	6.21552931876	6.07570646799	0.509614307287	OK
+ISSW/NuCStandards/NuC13.txt	ISSW/NuCStandards/spectrum_files.txt	nucleopore	15.1194539198	13.7468720408	0.761344722708	OK
+ISSW/NuCStandards/NuC15.txt	ISSW/NuCStandards/spectrum_files.txt	nucleopore	21.9378469469	19.1488188869	0.90317259472	OK
+ISSW/NuCStandards/NuC3.txt	ISSW/NuCStandards/spectrum_files.txt	nucleopore	0.37573355493	0.320316137559	0.985206014308	OK
+ISSW/NuCStandards/NuC6.txt	ISSW/NuCStandards/spectrum_files.txt	nucleopore	1.16973886246	1.14547711494	0.503380582567	OK
+ISSW/Ponderosa pine pollen/PP2026-1.txt	ISSW/Ponderosa pine pollen/spectrum_files.txt	millipore	1.22044567164	0.459024479512	3.82965163465	OK
+ISSW/Ponderosa pine pollen/PP2026-2.txt	ISSW/Ponderosa pine pollen/spectrum_files.txt	millipore	0.639497281706	0.272179794117	3.39984271732	OK
+ISSW/Ponderosa pine pollen/PP2026-3.txt	ISSW/Ponderosa pine pollen/spectrum_files.txt	millipore	4.6795964023	1.542201031	4.28895517962	OK
+ISSW/Rainier dirt/Rainier dirt 1.txt	ISSW/Rainier dirt/spectrum_files.txt	millipore	1.24099555101	0.883139122997	1.61303321804	OK
+ISSW/Rainier dirt/Rainier dirt 2.txt	ISSW/Rainier dirt/spectrum_files.txt	millipore	2.95621614428	2.24607788627	1.38548387234	OK
+ISSW/Rainier dirt/Rainier dirt 3.txt	ISSW/Rainier dirt/spectrum_files.txt	millipore	1.64548722964	1.30687075279	1.23141240106	OK
+ISSW/Rainier_and_MtCook_comparison/MtCook.txt	ISSW/Rainier_and_MtCook_comparison/spectrum_files.txt	millipore	9.08187541258	6.07262402812	1.82960372914	OK
+ISSW/Rainier_and_MtCook_comparison/Rainier.txt	ISSW/Rainier_and_MtCook_comparison/spectrum_files.txt	millipore	10.3468404775	7.25311938742	1.66539349767	OK
+ISSW/UCBoulder/Adams_1/MtAdamsSummit.txt	ISSW/UCBoulder/Adams_1/spectrum_files.txt	millipore	23.1234895352	8.93676278036	3.73512961892	OK
+ISSW/UCBoulder/Baker_1/MtBakerCrater06-25-25.txt	ISSW/UCBoulder/Baker_1/spectrum_files.txt	millipore	13.1979275861	8.97559108636	1.77072316237	OK
+ISSW/UCBoulder/Baker_1/MtBakerCrater07-10-25.txt	ISSW/UCBoulder/Baker_1/spectrum_files.txt	millipore	14.8834941739	5.47354890186	3.90771625162	OK
+ISSW/UCBoulder/Baker_1/MtBakerSummit05-23-24.txt	ISSW/UCBoulder/Baker_1/spectrum_files.txt	millipore	1.37005172848	0.826331763973	2.18804637656	OK
+ISSW/UCBoulder/Baker_1/MtBakerSummit06-25-25.txt	ISSW/UCBoulder/Baker_1/spectrum_files.txt	millipore	12.973081038	7.97459515644	2.12202977063	OK
+ISSW/UCBoulder/Baker_1/MtBakerSummit07-10-25.txt	ISSW/UCBoulder/Baker_1/spectrum_files.txt	millipore	15.0736353769	5.98026437381	3.64408082489	OK
+ISSW/UCBoulder/Baker_2/Baker_crater_06-25-2532.txt	ISSW/UCBoulder/Baker_2/spectrum_files.txt	millipore	16.3528093382	6.80160699304	3.47986607762	OK
+ISSW/UCBoulder/Baker_2/Baker_crater_07-10-2533.txt	ISSW/UCBoulder/Baker_2/spectrum_files.txt	millipore	15.5469705948	5.78555966951	3.86661211276	OK
+ISSW/UCBoulder/Baker_2/Baker_summit_05-23-2430.txt	ISSW/UCBoulder/Baker_2/spectrum_files.txt	millipore	1.45116213105	0.905038320435	2.07172097127	OK
+ISSW/UCBoulder/Baker_2/Baker_summit_06-25-2534.txt	ISSW/UCBoulder/Baker_2/spectrum_files.txt	millipore	13.3400730021	8.34192978125	2.06245809438	OK
+ISSW/UCBoulder/Baker_2/Baker_summit_07-10-2531.txt	ISSW/UCBoulder/Baker_2/spectrum_files.txt	millipore	14.5500492831	6.02049058723	3.49788885898	OK
+ISSW/UCBoulder/Misc_1/Greenland6-17-24.txt	ISSW/UCBoulder/Misc_1/spectrum_files.txt	millipore	5.26820299692	3.04553629694	2.33544824749	OK
+ISSW/UCBoulder/Misc_1/Huann5-10-23.txt	ISSW/UCBoulder/Misc_1/spectrum_files.txt	millipore	0.634400012136	0.600225828364	0.62300722182	OK
+ISSW/UCBoulder/Misc_1/MtCookNZ.txt	ISSW/UCBoulder/Misc_1/spectrum_files.txt	millipore	10.3559807641	8.08663366067	1.29033398653	OK
+ISSW/UCBoulder/Misc_1/SaguanagTijxa2-20.txt	ISSW/UCBoulder/Misc_1/spectrum_files.txt	millipore	11.1574666732	5.49420357356	2.89301855686	OK
+ISSW/UCBoulder/Rainier_1/MtRainierMuir06-2-25.txt	ISSW/UCBoulder/Rainier_1/spectrum_files.txt	millipore	8.67702619257	5.63528805967	1.93089850564	OK
+ISSW/UCBoulder/Rainier_1/MtRainierMuir07-13-25.txt	ISSW/UCBoulder/Rainier_1/spectrum_files.txt	millipore	7.47125754757	5.16280153375	1.71522071708	OK
+ISSW/UCBoulder/Rainier_1/MtRainierSummit06-2-25.txt	ISSW/UCBoulder/Rainier_1/spectrum_files.txt	millipore	1.73696813814	1.30125794248	1.43444455945	OK
+ISSW/UCBoulder/Rainier_1/MtRainierSummit08-25-25.txt	ISSW/UCBoulder/Rainier_1/spectrum_files.txt	millipore	5.68350488065	3.36837178907	2.24898582901	OK
+ISSW/UCBoulder/Rainier_1/Rainier80.txt	ISSW/UCBoulder/Rainier_1/spectrum_files.txt	millipore	10.2021825206	7.17807260612	1.65260574801	OK
+ISSW/UCBoulder/Rainier_2/Rainier_muir_06-25-25.txt	ISSW/UCBoulder/Rainier_2/spectrum_files.txt	millipore	8.62599530848	5.49711702701	1.99668632748	OK
+ISSW/UCBoulder/Rainier_2/Rainier_muir_07-13-25.txt	ISSW/UCBoulder/Rainier_2/spectrum_files.txt	millipore	6.15563830736	3.99740817623	1.93121713894	OK
+ISSW/UCBoulder/Rainier_2/Rainier_summit_06-25-25.txt	ISSW/UCBoulder/Rainier_2/spectrum_files.txt	millipore	1.60128144901	1.1872946459	1.47030776995	OK
+ISSW/UCBoulder/Rainier_2/Rainier_summit_08-25-25.txt	ISSW/UCBoulder/Rainier_2/spectrum_files.txt	millipore	4.75070918248	2.7163340356	2.37367937716	OK
+ISSW/UPS_2016Chile/CH16017.txt	ISSW/UPS_2016Chile/spectrum_files.txt	nucleopore	96.1358718955	39.0089922993	3.56582739859	OK
+ISSW/UPS_2016Chile/CH16103.txt	ISSW/UPS_2016Chile/spectrum_files.txt	nucleopore	5.42123367273	3.84136927376	1.62800830789	OK
+ISSW/UPS_INKStandards/A.14mL.txt	ISSW/UPS_INKStandards/spectrum_files.txt	nucleopore	0.978100123829	0.890198741468	0.757855991884	OK
+ISSW/UPS_INKStandards/B.10mL.txt	ISSW/UPS_INKStandards/spectrum_files.txt	nucleopore	0.736622668841	0.623126461473	1.01216100886	OK
+ISSW/UPS_INKStandards/C.20mL.txt	ISSW/UPS_INKStandards/spectrum_files.txt	nucleopore	2.97682406676	2.97529079867	0.43231573085	OK
+ISSW/UPS_INKStandards/C.34mL.txt	ISSW/UPS_INKStandards/spectrum_files.txt	nucleopore	6.2409649002	6.34620116379	0.372399619058	OK
+ISSW/UPS_INKStandards/C.50mL.txt	ISSW/UPS_INKStandards/spectrum_files.txt	nucleopore	11.8416843854	11.8017979196	0.442253070834	OK
+ISSW/UPS_INKStandards/C.57mL.txt	ISSW/UPS_INKStandards/spectrum_files.txt	nucleopore	28.2285261958	25.2149030254	0.822964415322	OK
+ISSW/UPS_Rainier2025-07-03-01/1A.txt	ISSW/UPS_Rainier2025-07-03-01/spectrum_files.txt	millipore	11.9454018072	8.38980421412	1.65871829952	OK
+ISSW/UPS_Rainier2025-07-03-01/1B.txt	ISSW/UPS_Rainier2025-07-03-01/spectrum_files.txt	millipore	7.67400365418	5.17749987493	1.79841050833	OK
+ISSW/UPS_Rainier2025-07-03-01/2A.txt	ISSW/UPS_Rainier2025-07-03-01/spectrum_files.txt	millipore	3.53030716618	2.61884417148	1.46865635126	OK
+ISSW/UPS_Rainier2025-07-03-01/3A.txt	ISSW/UPS_Rainier2025-07-03-01/spectrum_files.txt	millipore	3.88198804633	2.59830542163	1.82612080645	OK
+ISSW/UPS_Rainier2025-07-03-01/4A.txt	ISSW/UPS_Rainier2025-07-03-01/spectrum_files.txt	millipore	6.7457066194	4.60460885011	1.75785303639	OK
+ISSW/UPS_Rainier2025-07-03-01/5A.txt	ISSW/UPS_Rainier2025-07-03-01/spectrum_files.txt	millipore	6.81104602058	4.88812524422	1.58366194009	OK
+ISSW/UPS_Rainier2025-07-03-01/6.txt	ISSW/UPS_Rainier2025-07-03-01/spectrum_files.txt	millipore	6.31194471563	4.98982649683	1.2475472216	OK
+ISSW/Ulyana ful/10 ug.txt	ISSW/Ulyana ful/spectrum_files.txt	millipore	7.19333078532	8.1484654094	-0.00285389688464	OK
+ISSW/Ulyana ful/2 ug.txt	ISSW/Ulyana ful/spectrum_files.txt	millipore	1.03042454141	0.917498091435	0.834010805466	OK
+ISSW/Ulyana ful/25 ug.txt	ISSW/Ulyana ful/spectrum_files.txt	millipore	10.5806918396	20.8939692793	-1.93468943517	OK
+ISSW/Ulyana ful/40 ug.txt	ISSW/Ulyana ful/spectrum_files.txt	millipore	12.289117882	32.4480283267	-2.94447006625	OK
+ISSW/Ulyana ful/5 ug.txt	ISSW/Ulyana ful/spectrum_files.txt	millipore	2.71487099204	2.91032092088	0.188872953199	OK
+ISSW/Ulyana ful/66 ug.txt	ISSW/Ulyana ful/spectrum_files.txt	millipore	12.2771638585	36.5460003985	-3.36126794266	OK
+
+SUMMARY
+LAHM successful	134
+LAHM failed	0
+ISSW successful	75
+ISSW failed	0

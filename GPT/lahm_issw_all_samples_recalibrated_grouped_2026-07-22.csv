@@ -1,0 +1,191 @@
+LAHM file name,t_0 value,ISSW file name,AAE value,Plot group
+Summit_surface.txt,6.14693955987,MtAdamsSummit.txt,3.73512961892,Mount Adams
+Summit_surface.txt,6.14693955987,Summit_surface22.txt,NaN,Other samples
+Baker_crater_06-25-25_rBC_1.txt,5.48747996334,MtBakerCrater06-25-25.txt,1.77072316237,Mount Baker crater
+Baker_crater_06-25-25_rBc_2.txt,5.71034659219,Baker_crater_06-25-2532.txt,3.47986607762,Mount Baker crater
+Baker_crater_07-10-25_rBC_1.txt,6.32983411728,MtBakerCrater07-10-25.txt,3.90771625162,Mount Baker crater
+Baker_crater_07-10-25_rBc_2.txt,6.64404373786,Baker_crater_07-10-2533.txt,3.86661211276,Mount Baker crater
+Baker_crater_07-10-25.txt,6.32983411728,MtBakerCrater07-10-25.txt,3.90771625162,Mount Baker crater
+bakercrater_july10_2025_1syringe_Lucy.txt,7.53405093887,Baker_crater_07-10-2533.txt,3.86661211276,Mount Baker crater
+,NaN,MtBakerSummit05-23-24.txt,2.18804637656,Mount Baker summit
+,NaN,Baker_summit_05-23-2430.txt,2.07172097127,Mount Baker summit
+Baker_summit_06-25-25_rBC_1.txt,4.96700137449,MtBakerSummit06-25-25.txt,2.12202977063,Mount Baker summit
+Baker_summit_06-25-25_rBc_2.txt,5.08152324132,Baker_summit_06-25-2534.txt,2.06245809438,Mount Baker summit
+Baker_summit_07-10-25_rBC_1.txt,5.55921583204,MtBakerSummit07-10-25.txt,3.64408082489,Mount Baker summit
+Baker_summit_07-10-25_rBc_2.txt,5.76322449921,Baker_summit_07-10-2531.txt,3.49788885898,Mount Baker summit
+,NaN,NucStd4.txt,0.368527276981,Nucleopore standards
+,NaN,NucStd5.txt,0.355941550387,Nucleopore standards
+,NaN,NucStd6.txt,0.374188663617,Nucleopore standards
+,NaN,NucStd7.txt,0.380770346076,Nucleopore standards
+,NaN,NucA14mL.txt,0.67996092587,Nucleopore samples
+,NaN,NucA17mL.txt,2.4588541111,Nucleopore samples
+,NaN,NucA24mL.txt,0.485505576288,Nucleopore samples
+,NaN,NucA28mL.txt,0.621752695638,Nucleopore samples
+,NaN,NucB10mL.txt,0.823553057878,Nucleopore samples
+,NaN,NucB5mL.txt,0.862900410786,Nucleopore samples
+,NaN,NucC10mL.txt,0.746684736723,Nucleopore samples
+,NaN,NucC14mL.txt,NaN,Nucleopore samples
+,NaN,NucC20mL.txt,0.806988461514,Nucleopore samples
+,NaN,NucC34mL.txt,0.414411608246,Nucleopore samples
+,NaN,NucC40mL.txt,0.395863915857,Nucleopore samples
+,NaN,NucC50mL.txt,0.426094956801,Nucleopore samples
+,NaN,NucC5mL.txt,1.0294017625,Nucleopore samples
+,NaN,NuC1.txt,1.21172097029,Other samples
+,NaN,NuC10.txt,0.509614307287,Other samples
+,NaN,NuC13.txt,0.761344722708,Other samples
+,NaN,NuC15.txt,0.90317259472,Other samples
+,NaN,NuC3.txt,0.985206014308,Other samples
+,NaN,NuC6.txt,0.503380582567,Other samples
+,NaN,Rainier.txt,1.66539349767,Other samples
+,NaN,D1-255mL6-4-25.txt,NaN,Other samples
+,NaN,Rainier80.txt,1.65260574801,Other samples
+,NaN,CH16017.txt,3.56582739859,Chile samples
+,NaN,CH16103.txt,1.62800830789,Chile samples
+,NaN,28ml.txt,NaN,Other samples
+,NaN,A.14mL.txt,0.757855991884,Ink standards
+,NaN,B.10mL.txt,1.01216100886,Ink standards
+,NaN,C.20mL.txt,0.43231573085,Ink standards
+,NaN,C.34mL.txt,0.372399619058,Ink standards
+,NaN,C.50mL.txt,0.442253070834,Ink standards
+,NaN,C.57mL.txt,0.822964415322,Ink standards
+run_1.txt,NaN,,NaN,Other samples
+run_1.txt,NaN,,NaN,Other samples
+run_1.txt,NaN,,NaN,Other samples
+run_1.txt,NaN,,NaN,Other samples
+run_1.txt,NaN,,NaN,Other samples
+blankfilter.txt,3.78558802659,,NaN,Other samples
+DI.txt,5.22297683238,,NaN,Other samples
+run_1.txt,4.86085183184,,NaN,Other samples
+run_1.txt,6.92011499361,,NaN,Other samples
+LAHM_test_data.txt,4.96899770563,,NaN,Other samples
+Millipore blank.txt,4.38772605351,,NaN,Other samples
+Huann_05-10-23.txt,5.44341633105,Huann5-10-23.txt,0.62300722182,Other field samples
+Huann_05-10-23.txt,5.44341633105,Huann_05-10-2335.txt,NaN,Other field samples
+MtCook_NZ_02-07-24.txt,5.19691632862,MtCook.txt,1.82960372914,Mount Cook
+MtCook_NZ_02-07-24.txt,5.19691632862,MtCookNZ.txt,1.29033398653,Mount Cook
+MtCook_NZ_02-07-24.txt,5.19691632862,MtCook_NZ_02-07-2436.txt,NaN,Mount Cook
+North_pole_09-14-25.txt,5.2731121082,NorthPole9-14-25.txt,NaN,Other field samples
+North_pole_09-14-25.txt,5.2731121082,North_pole_09-14-2537.txt,NaN,Other field samples
+Poi_09-18-25.txt,5.60384615616,POI.txt,NaN,Other field samples
+Poi_09-18-25.txt,5.60384615616,Poi_09-18-2538.txt,NaN,Other field samples
+Sea_ice_side_of_ship_06-17-24.txt,4.2395921357,Greenland6-17-24.txt,2.33544824749,Other field samples
+Sea_ice_side_of_ship_06-17-24.txt,4.2395921357,Sea_ice_side_of_ship_06-17-2440.txt,NaN,Other field samples
+Saguyanig_ship_track_Canada_02-20.txt,4.41487174205,SaguanagTijxa2-20.txt,2.89301855686,Other field samples
+Saguyanig_ship_track_Canada_02-20.txt,4.41487174205,Sanguyanig_ship_track_Canada_02-2039.txt,NaN,Other field samples
+Pine pollen 20 mL.txt,4.52104892115,PP2026-1.txt,3.82965163465,Pine pollen
+Pine pollen 30 mL.txt,4.85324628532,PP2026-2.txt,3.39984271732,Pine pollen
+Pine pollen dry smear.txt,4.7375722488,PP2026-3.txt,4.28895517962,Pine pollen
+Dirt str 1.txt,NaN,Rainier dirt 1.txt,1.61303321804,Rainier dirt
+Dirt str 2.txt,NaN,Rainier dirt 2.txt,1.38548387234,Rainier dirt
+Dirt str 3.txt,NaN,Rainier dirt 3.txt,1.23141240106,Rainier dirt
+,NaN,MtRainierMuir06-2-25.txt,1.93089850564,Rainier Muir
+Rainier_muir_06-25-25_LAHM_1.txt,7.05920731092,Rainier_muir_06-25-25.txt,1.99668632748,Rainier Muir
+Rainier_muir_07-13-25_LAHM_1.txt,5.37059903601,MtRainierMuir07-13-25.txt,1.71522071708,Rainier Muir
+Rainier_muir_07-13-25_LAHM_1.txt,5.37059903601,Rainier_muir_07-13-25.txt,1.93121713894,Rainier Muir
+,NaN,MtRainierSummit06-2-25.txt,1.43444455945,Rainier summit
+Rainier_summit_06-25-25_LAHM_1.txt,5.35211447359,Rainier_summit_06-25-25.txt,1.47030776995,Rainier summit
+Rainier_summit_08-25-25_LAHM_1.txt,6.31856903849,MtRainierSummit08-25-25.txt,2.24898582901,Rainier summit
+Rainier_summit_08-25-25_LAHM_2.txt,6.27080631466,Rainier_summit_08-25-25.txt,2.37367937716,Rainier summit
+10 ug.txt,5.55210499206,10 ug.txt,-0.00285389688464,Fullerene standards
+25 ug.txt,5.37322878412,25 ug.txt,-1.93468943517,Fullerene standards
+2 ug.txt,6.41279999744,2 ug.txt,0.834010805466,Fullerene standards
+40 ug.txt,5.21588518814,40 ug.txt,-2.94447006625,Fullerene standards
+5 ug.txt,5.74348597572,5 ug.txt,0.188872953199,Fullerene standards
+66 ug.txt,5.13313338285,66 ug.txt,-3.36126794266,Fullerene standards
+run_1.txt,4.40811455978,,NaN,Other samples
+run_1.txt,4.53780189533,,NaN,Other samples
+run_1.txt,4.75535027992,,NaN,Other samples
+run_1.txt,4.53108579293,,NaN,Other samples
+run_1.txt,4.57458240393,,NaN,Other samples
+run_1.txt,4.06401012499,,NaN,Other samples
+run_1.txt,4.29842609629,,NaN,Other samples
+run_1.txt,3.97872238159,,NaN,Other samples
+run_1.txt,4.01888679844,,NaN,Other samples
+run_1.txt,4.04378030035,,NaN,Other samples
+run_1.txt,4.22549737644,,NaN,Other samples
+run_1.txt,4.02358678811,,NaN,Other samples
+run_1.txt,4.20090690996,,NaN,Other samples
+run_1.txt,4.11757282411,,NaN,Other samples
+run_1.txt,4.24500917098,,NaN,Other samples
+run_1.txt,4.23792655362,,NaN,Other samples
+run_1.txt,4.22487514963,,NaN,Other samples
+run_1.txt,4.36563823468,,NaN,Other samples
+run_1.txt,4.22274558488,,NaN,Other samples
+run_1.txt,4.20674649995,,NaN,Other samples
+run_1.txt,4.06662151258,,NaN,Other samples
+run_1.txt,7.31165045237,,NaN,Other samples
+run_1.txt,7.21078075634,,NaN,Other samples
+run_1.txt,4.69258899185,,NaN,Other samples
+run_1.txt,4.55472193104,,NaN,Other samples
+run_1.txt,4.26065342645,,NaN,Other samples
+run_1.txt,4.61908198534,,NaN,Other samples
+run_1.txt,4.13898487564,,NaN,Other samples
+run_1.txt,4.08242314916,,NaN,Other samples
+run_1.txt,4.05453972787,,NaN,Other samples
+run_1.txt,4.0901555693,,NaN,Other samples
+run_1.txt,6.76622662084,,NaN,Other samples
+run_1.txt,6.03529664198,,NaN,Other samples
+run_1.txt,4.27230352972,,NaN,Other samples
+run_1.txt,4.18997011371,,NaN,Other samples
+run_1.txt,3.96629603342,,NaN,Other samples
+run_1.txt,4.09387933062,,NaN,Other samples
+run_1.txt,4.10369186418,,NaN,Other samples
+run_1.txt,4.03419594863,,NaN,Other samples
+run_1.txt,3.99187996746,,NaN,Other samples
+run_1.txt,4.01470075825,,NaN,Other samples
+run_1.txt,3.96591989076,,NaN,Other samples
+run_1.txt,5.03640355651,,NaN,Other samples
+run_1.txt,5.65585776063,,NaN,Other samples
+run_1.txt,5.60224161232,,NaN,Other samples
+run_1.txt,4.2239627005,,NaN,Other samples
+run_1.txt,4.18822783287,,NaN,Other samples
+run_1.txt,4.1770791018,,NaN,Other samples
+run_1.txt,4.15995385573,,NaN,Other samples
+run_1.txt,4.04845046048,,NaN,Other samples
+run_1.txt,4.16081141178,,NaN,Other samples
+run_1.txt,4.19880642719,,NaN,Other samples
+run_1.txt,4.22634758939,,NaN,Other samples
+run_1.txt,4.18088665278,,NaN,Other samples
+run_1.txt,4.15127297373,,NaN,Other samples
+run_1.txt,4.08135780824,,NaN,Other samples
+run_1.txt,5.1228815602,,NaN,Other samples
+run_1.txt,5.14261765956,,NaN,Other samples
+run_1.txt,4.81266867006,,NaN,Other samples
+run_1.txt,4.11166858931,,NaN,Other samples
+run_1.txt,4.08889076339,,NaN,Other samples
+run_1.txt,4.13731719774,,NaN,Other samples
+run_1.txt,3.91642551089,,NaN,Other samples
+run_1.txt,3.83644143892,,NaN,Other samples
+run_1.txt,3.90352120952,,NaN,Other samples
+run_1.txt,3.95539877456,,NaN,Other samples
+run_1.txt,4.14741858372,,NaN,Other samples
+run_1.txt,4.06411321354,,NaN,Other samples
+run_1.txt,4.03797752718,,NaN,Other samples
+run_1.txt,4.03653131531,,NaN,Other samples
+run_1.txt,4.20968369753,,NaN,Other samples
+run_1.txt,4.22823011604,,NaN,Other samples
+run_1.txt,6.58775136065,1A.txt,1.65871829952,Rainier Site 1 surface
+run_1.txt,6.18119175271,1B.txt,1.79841050833,Rainier Site 1 surface
+run_1.txt,6.45424010938,,NaN,Other samples
+2025-07-03-01-2A.txt,4.22441744364,2A.txt,1.46865635126,Rainier Site 1 subsurface
+run_1.txt,4.37440946937,2A.txt,1.46865635126,Rainier Site 1 subsurface
+run_1.txt,4.50678971319,,NaN,Other samples
+run_1.txt,4.27428950791,3A.txt,1.82612080645,Rainier Site 1 subsurface
+run_1.txt,4.27661235193,,NaN,Other samples
+run_1.txt,4.27647138424,4A.txt,1.75785303639,Rainier Site 1 subsurface
+run_1.txt,4.28331745714,,NaN,Other samples
+run_1.txt,4.14030302287,5A.txt,1.58366194009,Rainier Site 1 subsurface
+run_1.txt,4.28933810498,,NaN,Other samples
+run_1.txt,4.38454240078,6.txt,1.2475472216,Rainier Site 1 subsurface
+run_1.txt,6.1641550675,,NaN,Other samples
+run_1.txt,5.94598713342,,NaN,Other samples
+run_1.txt,4.95015643796,,NaN,Other samples
+run_1.txt,4.15775704046,,NaN,Other samples
+run_1.txt,4.42756774097,,NaN,Other samples
+run_1.txt,4.40418468233,,NaN,Other samples
+run_1.txt,4.34868422136,,NaN,Other samples
+run_1.txt,4.14053199826,,NaN,Other samples
+run_1.txt,4.31668333994,,NaN,Other samples
+run_1.txt,4.31652934193,,NaN,Other samples
+run_1.txt,4.41856526474,,NaN,Other samples
+run_1.txt,4.34387819919,,NaN,Other samples
