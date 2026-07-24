@@ -29,7 +29,6 @@ def get_spectrum(filename):
     return lambda_nm, I
 
 def smooth_and_shift(I,I0,smoothsize=60,I_skootch=0.001,plotting=True,verbose=False,Dark_correction=True):
-
     # Smoothing
     I_smooth = uniform_filter1d(I,size=smoothsize)
     I0_smooth = uniform_filter1d(I0,size=smoothsize)
@@ -58,7 +57,7 @@ def invert_chi_theory(chilist,R1R2):
 def get_f(chilist,R1R2):
     return invert_chi_theory(chilist,R1R2)
 
-def extract_chi_spectrum(spectrum_folder,iextract,spectrum_filelist='spectrum_files.txt',Blank='Blank.txt'):
+def extract_chi_spectrum(spectrum_folder,iextract,spectrum_filelist='spectrum_files.txt',Blank='Blank.txt',plotting=True):
 
     # Checking location of files
     files = os.listdir(spectrum_folder)
@@ -80,7 +79,7 @@ def extract_chi_spectrum(spectrum_folder,iextract,spectrum_filelist='spectrum_fi
         I, I0 = smooth_and_shift(I_raw,I0_raw)
         
         # Get the observed chi-values
-        chi = get_chi_obs(I,I0,lambda_nm, title=spectrum_filename)
+        chi = get_chi_obs(I,I0,lambda_nm, plotting, title=spectrum_filename)
         if i == iextract:
             chi_save = chi
             spectrum_name1 = spectrum_folder+' '+spectrum_list[i]
@@ -89,6 +88,59 @@ def extract_chi_spectrum(spectrum_folder,iextract,spectrum_filelist='spectrum_fi
 
     return lambda_nm, chi_save, spectrum_name1
         
+def get_chi_std(spectrum_folder,subset_start,subset_stop):
+    
+    spectrum_filelist = spectrum_folder+'spectrum_files.txt'
+    spectrum_list, number_of_loadings = get_spectrum_list(spectrum_filelist)
+    
+    # Load in the blank, and check indices
+    lambda_nm, I0_raw = get_spectrum(spectrum_folder+'/Blank.txt')
+    
+    # Preallocate arrays
+    chi_range = []
+    
+    # Get the chi-values
+    for i in range(number_of_loadings):
+        
+        # Extract the spectrum for this item in the list
+        spectrum_filename = spectrum_list[i]
+        lambda_nm, I_raw = get_spectrum(spectrum_folder+spectrum_filename)
+        
+        # Smooth and shift
+        I, I0 = smooth_and_shift(I_raw,I0_raw)
+        
+        # Get observed chi
+        chi = get_chi_obs(I,I0,lambda_nm, title=spectrum_filename)
+        chi_range.append(chi)
+        
+    # These are the loadings that are supposed to go with those files
+    loadings_file = spectrum_folder+'/loadings.txt'; print(loadings_file)
+    L_range = np.loadtxt(spectrum_folder+'/loadings.txt'); print(L_range)
+    number_of_loadings = len(L_range)
+        
+    # Shave off some if desired
+    if subset_stop == -1:
+        chi_range = chi_range[subset_start:]
+        L_range = L_range[subset_start:]
+        spectrum_list = spectrum_list[subset_start:]
+    else:
+        end_index = subset_stop+1
+        chi_range = chi_range[subset_start:end_index]
+        L_range = L_range[subset_start:end_index]
+        spectrum_list = spectrum_list[subset_start:end_index]
+    
+    # Double-checking
+    if len(L_range) != len(chi_range):
+        print('inconsistency')
+        np.sqrt(-1)
+
+    # It's just convenient to return this too
+    if number_of_loadings != len(L_range):
+        print('Reducing number of loadings used from ', number_of_loadings, ' to', len(L_range))
+        number_of_loadings = len(L_range)
+    
+    return lambda_nm, L_range, np.array(chi_range), spectrum_list, number_of_loadings
+
 def get_B(R1R2):
     #     term = np.sqrt(R1R2**2 + 2*R1R2 + 1); #print('term = ', term)
     #     B = 0.5*(R1R2**2 - R1R2*term - 2*R1R2 + term + 1)/(R1R2**2 - R1R2*term + 2*R1R2 + term + 1)
@@ -121,7 +173,6 @@ def get_f_fp_fpp(chilist,R1R2):
 
     f_arrays = [flist, fplist, fpplist]
     return f_arrays
-
 
 def get_chi_theory(tau,R1R2):
     return 2*tau+np.log((1-R1R2*np.exp(-4*tau))/(1-R1R2))
@@ -160,6 +211,44 @@ def find_min_idx(x):
     k = x.argmin()
     ncol = x.shape[1]
     return round(k/ncol), k%ncol
+
+def get_calibration_parameters(L_range,chi_range_lambda,lambda_nm,I_lambda,order=2,plotting=False):
+# Fitting chi(L)
+    
+    thislambda = lambda_nm[I_lambda]
+    
+    L_range_extended = np.append(0,L_range)
+    chi_range_lambda_extended = np.append(0,chi_range_lambda)
+    weights = np.ones(np.shape(L_range_extended)); weights[0] = 100
+    p_chi_lambda = np.polyfit(L_range_extended,chi_range_lambda_extended,2,w=weights)
+    
+    # Let's take a look at chi(L)
+    if plotting:
+        plt.figure()
+        plt.scatter(L_range_extended,chi_range_lambda_extended,marker='o',label=thislambda)
+        plt.xlabel('Loading (ug)')
+        plt.ylabel('chi')
+        plt.legend()
+        plt.plot(L_range_extended,np.polyval(p_chi_lambda,L_range_extended))
+        plt.grid(True)
+    
+    # Fitting L(chi)
+    p_L_lambda = np.polyfit(chi_range_lambda_extended,L_range_extended,2,w=weights)
+    
+    # Let's take a look at L(chi)
+    if plotting:
+        plt.figure()
+        plt.scatter(chi_range_lambda_extended,L_range_extended,marker='o',label=str(thislambda))
+        plt.xlabel('chi')
+        plt.ylabel('Loading (ug)')
+        plt.legend()
+        plt.plot(chi_range_lambda_extended,np.polyval(p_L_lambda,chi_range_lambda_extended))
+        plt.grid(True)
+
+    # betabar ... the factor of 1/2 is because of Tom's eq. 4
+    betabar_lambda = p_chi_lambda[-2]/2
+    
+    return p_L_lambda, betabar_lambda
 
 
     # def getAngstromExponent(I,I0,lambda_nm,title,
