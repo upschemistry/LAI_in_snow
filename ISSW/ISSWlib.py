@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import uniform_filter1d
 import os
+smoothsize = 10 # This is a global variable
 
 # Functions to help with the analysis
 def get_spectrum_list(filename):
@@ -28,7 +29,7 @@ def get_spectrum(filename):
     I = data[:,1]
     return lambda_nm, I
 
-def smooth_and_shift(I,I0,smoothsize=60,I_skootch=0.001,plotting=True,verbose=False,Dark_correction=True):
+def smooth_and_shift(I,I0,I_skootch=0.001,plotting=True,verbose=False,Dark_correction=True):
     # Smoothing
     I_smooth = uniform_filter1d(I,size=smoothsize)
     I0_smooth = uniform_filter1d(I0,size=smoothsize)
@@ -248,7 +249,7 @@ def get_calibration_parameters(L_range,chi_range_lambda,lambda_nm,I_lambda,order
     # betabar ... the factor of 1/2 is because of Tom's eq. 4
     betabar_lambda = p_chi_lambda[-2]/2
     
-    return p_L_lambda, betabar_lambda
+    return p_L_lambda, p_chi_lambda, betabar_lambda
 
 
     # def getAngstromExponent(I,I0,lambda_nm,title,
