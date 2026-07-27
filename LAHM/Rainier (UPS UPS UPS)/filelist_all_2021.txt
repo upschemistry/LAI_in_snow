@@ -2,14 +2,11 @@ UPS2021-1/run_1.txt 540
 UPS2021-2/run_1.txt 625
 UPS2021-3/run_1.txt 545
 UPS2021-4/run_1.txt 400
-UPS2021-5/run_1.txt 600
-UPS2021-C1/run_1.txt 100 UPS2021-C2/run_1.txt 100 UPS2021-C3/run_1.txt 100 UPS2021-C4/run_1.txt 100 UPS2021-C5/run_1.txt 100 UPS2021-C6/run_1.txt 100 UPS2021-C7/run_1.txt 100 UPS2021-C8/run_1.txt 100 UPS2021-C9/run_1.txt 100 UPS2021-C10/run_1.txt 100 UPS2021-C11/run_1.txt 100 UPS2021-C12/run_1.txt 100 UPS2021-C13/run_1.txt 100 UPS2021-C14/run_1.txt 100 UPS2021-C15/run_1.txt 100 
+UPS2021-5/run_1.txt 600UPS2021-C1/run_1.txt 100 UPS2021-C2/run_1.txt 100 UPS2021-C3/run_1.txt 100 UPS2021-C4/run_1.txt 100 UPS2021-C5/run_1.txt 100 UPS2021-C6/run_1.txt 100 UPS2021-C7/run_1.txt 100 UPS2021-C8/run_1.txt 100 UPS2021-C9/run_1.txt 100 UPS2021-C10/run_1.txt 100 UPS2021-C11/run_1.txt 100 UPS2021-C12/run_1.txt 100 UPS2021-C13/run_1.txt 100 UPS2021-C14/run_1.txt 100 UPS2021-C15/run_1.txt 100 
 UPS2021-C16/run_1.txt 100 
-
 UPS2021-P1/run_1.txt 75
 UPS2021-P2/run_1.txt 70
 UPS2021-P3/run_1.txt 45
-
 UPS2021-R1/run_1.txt 810
 UPS2021-R2/run_1.txt 830
 UPS2021-R3/run_1.txt 900
@@ -46,7 +43,6 @@ UPS2021-R34/run_1.txt 840
 UPS2021-R35/run_1.txt 815
 UPS2021-R36/run_1.txt 855
 UPS2021-R37/run_1.txt 820
-
 UPS2021-S1/run_1.txt 550
 UPS2021-S2/run_1.txt 637
 UPS2021-S3/run_1.txt 1130
