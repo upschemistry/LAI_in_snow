@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import uniform_filter1d
 import os
-smoothsize = 10 # This is a global variable
+smoothsize = 10
 
 # Functions to help with the analysis
 def get_spectrum_list(filename):
@@ -90,6 +90,8 @@ def extract_chi_spectrum(spectrum_folder,iextract,spectrum_filelist='spectrum_fi
     return lambda_nm, chi_save, spectrum_name1
         
 def get_chi_std(spectrum_folder,subset_start,subset_stop):
+
+    print('From get_chi_std, I think smoothsize = ', smoothsize)
     
     spectrum_filelist = spectrum_folder+'spectrum_files.txt'
     spectrum_list, number_of_loadings = get_spectrum_list(spectrum_filelist)
